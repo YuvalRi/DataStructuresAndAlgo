@@ -10,19 +10,18 @@ def unimodal_index(A: list, n: int):
     all elements are smaller and they are sorted in increasing order.
     '''
     found = False
-    min = 0
-    max = n-1
-    while (found == False and min <= max):
-        mid = math.floor((min+max)/2)
-        if(A[mid] > A[mid+1] and A[mid] > A[mid-1]):
+    start = 0
+    end = n-1
+    while (found == False and start <= end):
+        mid = math.floor((start+end)/2)
+        if A[mid] > A[mid+1] and A[mid] > A[mid-1]:
             found = True
         else:
-            if (A[mid] > A[mid+1]):
-                max = mid - 1
+            if A[mid] > A[mid+1]:
+                end = mid - 1
             else:
-                min = mid + 1
-    if found == True:
-        return mid
+                start = mid + 1
+    return mid
 
 
 if __name__ == "__main__":
