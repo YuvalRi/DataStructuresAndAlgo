@@ -12,23 +12,22 @@ def unimodal_index(A: list, n: int):
     found = False
     start = 0
     end = n-1
-    while (found == False and start <= end):
+    if len(A) == 1:
+        return 0
+    while found == False and start < end:
         mid = math.floor((start+end)/2)
         if A[mid] > A[mid+1] and A[mid] > A[mid-1]:
             found = True
         else:
             if A[mid] > A[mid+1]:
                 end = mid - 1
+                if A[end] == A[0]:
+                    return 0
             else:
                 start = mid + 1
+                if A[start] == A[n-1]:
+                    return n-1
     return mid
-
-
-if __name__ == "__main__":
-    # example
-    unimodal_index(A=[1,3,7,10,8,5,3], n=7)
-    unimodal_index(A=[1,10,9,8,7,6,5], n=7)
-    unimodal_index(A=[1,2,9,8,7,6,5], n=7)
 
 
 
