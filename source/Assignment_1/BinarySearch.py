@@ -1,11 +1,9 @@
-import math
-
 def binary_search(n: int, A: list, x: int):
     start = 0
     end = n-1
     found = False
     while found == False and start <= end:
-        mid = math.floor((start+end)/2)
+        mid = (start+end)//2
         if A[mid] == x:
             found = True
         elif x < A[mid]:
