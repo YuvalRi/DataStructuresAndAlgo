@@ -20,7 +20,7 @@ def find_pivot(A1, start, end):
 
 def shift_and_sort(A1: list, n: int, val: int):
     '''
-    
+    A function which returns an index of a number in a rotated array
     '''
     pivot = find_pivot(A1, 0, n-1)
     # the array is not rotated
