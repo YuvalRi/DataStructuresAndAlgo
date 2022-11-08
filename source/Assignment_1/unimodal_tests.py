@@ -8,7 +8,7 @@ if __name__ == "__main__":
     print(unimodal_index(A=[1,6], n=len([1,6])) == 1)
     print(unimodal_index(A=[3], n=len([3])) == 0)
     print(unimodal_index(A=[8,6,4,2,1], n=len([8,6,4,2,1])) == 0)
-    print(unimodal_index(A=[9,2,14,13,12,10], n=len([8,6,4,2,1])) == 2)
+    print(unimodal_index(A=[9,2,14,13,12,10], n=len([9,2,14,13,12,10])) == 2)
 
 
 

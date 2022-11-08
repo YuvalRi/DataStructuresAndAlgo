@@ -15,7 +15,7 @@ def binary_search(n: int, A: list, x: int):
     if found == True:
         return mid
     else:
-        print('NOT-FOUND')
+        return -1 
 
 
 if __name__ == "__main__":
@@ -25,6 +25,7 @@ if __name__ == "__main__":
     print(binary_search(n = len(lst1), A = lst1, x = 3))
     print(binary_search(n = len(lst1), A = lst1, x = 4))
     print(binary_search(n = len(lst1), A = lst1, x = 5))
+    print(binary_search(n = len(lst1), A = lst1, x = 7))
 
 
 
