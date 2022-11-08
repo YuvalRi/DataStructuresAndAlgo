@@ -13,7 +13,7 @@ def unimodal_index(A: list, n: int):
     start = 0
     end = n-1
     if len(A) == 1:
-        return 0
+        return start
     while found == False and start < end:
         mid = math.floor((start+end)/2)
         if A[mid] > A[mid+1] and A[mid] > A[mid-1]:
@@ -21,12 +21,12 @@ def unimodal_index(A: list, n: int):
         else:
             if A[mid] > A[mid+1]:
                 end = mid - 1
-                if A[end] == A[0]:
-                    return 0
+                if A[end] == A[start]:
+                    return start
             else:
                 start = mid + 1
-                if A[start] == A[n-1]:
-                    return n-1
+                if A[start] == A[end]:
+                    return end
     return mid
 
 
