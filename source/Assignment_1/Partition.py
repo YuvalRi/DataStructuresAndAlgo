@@ -14,8 +14,7 @@ def partition(A: list, p: int, r: int):
             A[i], A[j] = A[j], A[i]
         else:
             done = True
-    print(A)
-    return j
+    return j 
      
 if __name__ == "__main__":
     A = [40, 20, 10, 80, 60, 50, 7, 30, 100]
