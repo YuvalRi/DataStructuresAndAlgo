@@ -28,5 +28,7 @@ if __name__ == "__main__":
     counting_sort(data_2, len(data_2), 13)
     print("Sorted Array: ")
     print(data_2)
-
-
+    data_3 = [5, 3, 5, 2, 1, 7, 3, 8 ,2]
+    counting_sort(data_3, len(data_3), 9)
+    print("Sorted Array: ")
+    print(data_3)
