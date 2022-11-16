@@ -1,7 +1,7 @@
 # Partition is a function that called in QuickSort algorithm
 
 def partition(A: list, p: int, r: int):
-    i = p + 1
+    i = p
     j = r 
     pivot = A[p]
     while i <= j:
@@ -15,8 +15,6 @@ def partition(A: list, p: int, r: int):
             j -= 1
         else:
             i += 1
-    A[p] = A[j]
-    A[j] = pivot
     return j
      
 if __name__ == "__main__":
@@ -26,5 +24,8 @@ if __name__ == "__main__":
     print(partition(B, 0, len(B)-1))
     C = [9, 2, 55, 76, 24]
     print(partition(C, 0, len(C)-1))
+    C = [8, 22, 6, 60, 90, 81, 96, 47]
+    print(partition(C, 0, len(C)-1))
+
 
 

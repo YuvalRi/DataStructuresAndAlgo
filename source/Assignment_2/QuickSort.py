@@ -12,7 +12,7 @@ def quick_sort(A: list, p: int, r: int):
         return
     else:
         q = partition(A, p, r)
-        quick_sort(A, p, q-1)
+        quick_sort(A, p, q)
         quick_sort(A, q+1, r)
     return A
 
