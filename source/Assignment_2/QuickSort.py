@@ -25,5 +25,7 @@ if __name__ == "__main__":
     print(quick_sort(C, 0, len(C)-1))
     D = [8,9,2,5]
     print(quick_sort(D, 5, 3))
+    E = [9, 2, 55, 76, 24]
+    print(quick_sort(E, 0, len(E)-1))
 
 
