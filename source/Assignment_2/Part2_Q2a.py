@@ -1,8 +1,10 @@
-# In this algorithm I used a variation of 'partition' algorithm we saw in lecture 2. 
+# This algorithm is a variation of 'partition' procedure used in Quick Sort.
+
+
 def one_zero_array(A: list):
    '''
-   The function gets an array of only {0,1} elements
-   and should sort the array in O(n).
+   The function receives an array of only {0,1} elements
+   and sorts the array in O(n).
    '''
    i = 0
    j = len(A) - 1 
@@ -22,7 +24,7 @@ def one_zero_array(A: list):
 
 
 if __name__ == "__main__":
-    A = [0,1,1,0,0,0,1]
+    A = [0, 1, 1, 0, 0, 0, 1]
     print(one_zero_array(A))
     B = [1, 0, 1, 0, 1, 0]
     print(one_zero_array(B))
@@ -32,4 +34,3 @@ if __name__ == "__main__":
     print(one_zero_array(D))
     E = [1, 1, 0, 0, 1, 1, 0, 1]
     print(one_zero_array(E))
-
