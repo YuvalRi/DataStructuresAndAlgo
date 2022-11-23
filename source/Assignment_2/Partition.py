@@ -15,7 +15,7 @@ def partition(A: list, p: int, r: int):
             j -= 1
         else:
             i += 1
-    return j
+    return j, A
 
 
 if __name__ == "__main__":
@@ -25,5 +25,8 @@ if __name__ == "__main__":
     print(partition(B, 0, len(B)-1))
     C = [9, 2, 55, 76, 24]
     print(partition(C, 0, len(C)-1))
-    C = [8, 22, 6, 60, 90, 81, 96, 47]
-    print(partition(C, 0, len(C)-1))
+    D = [8, 22, 6, 60, 90, 81, 96, 47]
+    print(partition(D, 0, len(D)-1))
+    E = [5, 1, 6, 3, 2, 4]
+    print(partition(E, 0, len(E)-1))
+

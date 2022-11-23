@@ -24,12 +24,11 @@ def merge_count(A: list, p: int, q: int, r: int):
             A[k] = left[i]
             i += 1
         else:
-            count += 1
+            count += len(left) - i
             A[k] = right[j]
             j += 1
         k += 1
     while i < len_1:
-        count += 1
         A[k] = left[i]
         i += 1
         k += 1
@@ -53,17 +52,16 @@ def merge_sort(A: list, p: int, r: int):
 
 if __name__ == "__main__":
     A = [40, 20, 10]
-    print(merge_sort(A, 0, len(A)-1))
+    print(f"TEST A: {merge_sort(A, 0, len(A)-1) == 3}")
     B = [1, 7, 9]
-    print(merge_sort(B, 0, len(B)-1))
+    print(f"TEST B: {merge_sort(B, 0, len(B)-1) == 0}")
     C = [1, 9, 7]
-    print(merge_sort(C, 0, len(C)-1))
-    D = [1, 9, 7, 8, 2]
-    print(merge_sort(D, 0, len(D)-1))
+    print(f"TEST C: {merge_sort(C, 0, len(C)-1) == 1}")
+    D = [1, 9, 7, 8]
+    print(f"TEST D: {merge_sort(D, 0, len(D)-1) == 2}")
     E = [1, 2, 3, 4, 5, 6]
-    print(merge_sort(E, 0, len(E)-1))
+    print(f"TEST E: {merge_sort(E, 0, len(E)-1) == 0}")
     F = [6, 5, 4, 3, 2]
-    print(merge_sort(F, 0, len(F)-1))
+    print(f"TEST F: {merge_sort(F, 0, len(F)-1) == 10}")
     G = [1, 2, 3, 4, 5, 7, 6]
-    print(merge_sort(G, 0, len(G)-1))
-
+    print(f"TEST G: {merge_sort(G, 0, len(G)-1) == 1}")
