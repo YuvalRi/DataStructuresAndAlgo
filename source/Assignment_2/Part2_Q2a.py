@@ -2,14 +2,14 @@
 
 
 def one_zero_array(A: list):
-   '''
-   The function receives an array of only {0,1} elements
-   and sorts the array in O(n).
-   '''
-   i = 0
-   j = len(A) - 1 
-   pivot = 0
-   while i <= j:
+    '''
+    The function receives an array of only {0,1} elements
+    and sorts the array in O(n).
+    '''
+    i = 0
+    j = len(A) - 1
+    pivot = 0
+    while i <= j:
         while A[i] == pivot and i < j:
             i += 1
         while A[j] > pivot:
@@ -20,7 +20,7 @@ def one_zero_array(A: list):
             j -= 1
         else:
             i += 1
-   return A
+    return A
 
 
 if __name__ == "__main__":
