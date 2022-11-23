@@ -15,9 +15,9 @@ def merge(A: list, p: int, q: int, r: int):
     for j in range(0, len_2):
         right[j] = A[q+1+j]
     # merge the temp arrays back into our original array - A
-    i = 0 # initial index of left array (subarray)
-    j = 0 # initial index of right array (subarray)
-    k = p # initial index of the merged array
+    i = 0  # initial index of left array (subarray)
+    j = 0  # initial index of right array (subarray)
+    k = p  # initial index of the merged array
     while i < len_1 and j < len_2:
         if left[i] <= right[j]:
             A[k] = left[i]
