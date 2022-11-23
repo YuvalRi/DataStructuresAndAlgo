@@ -2,7 +2,7 @@
 
 def partition(A: list, p: int, r: int):
     i = p
-    j = r 
+    j = r
     pivot = A[p]
     while i <= j:
         while A[i] < pivot and i < j:
@@ -16,7 +16,8 @@ def partition(A: list, p: int, r: int):
         else:
             i += 1
     return j
-     
+
+
 if __name__ == "__main__":
     A = [40, 20, 10, 80, 60, 50, 7, 30, 100]
     print(partition(A, 0, len(A)-1))
@@ -26,6 +27,3 @@ if __name__ == "__main__":
     print(partition(C, 0, len(C)-1))
     C = [8, 22, 6, 60, 90, 81, 96, 47]
     print(partition(C, 0, len(C)-1))
-
-
-

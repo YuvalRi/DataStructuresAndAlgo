@@ -1,6 +1,7 @@
 from Partition import partition
 # QuickSort algorithm
 
+
 def quick_sort(A: list, p: int, r: int):
     '''
     A recursive algorithm which sort a given array A
@@ -16,6 +17,7 @@ def quick_sort(A: list, p: int, r: int):
         quick_sort(A, q+1, r)
     return A
 
+
 if __name__ == "__main__":
     A = [40, 20, 10, 80, 60, 50, 7, 30, 100]
     print(quick_sort(A, 0, len(A)-1))
@@ -23,9 +25,7 @@ if __name__ == "__main__":
     print(quick_sort(B, 0, len(B)-1))
     C = [8]
     print(quick_sort(C, 0, len(C)-1))
-    D = [8,9,2,5]
+    D = [8, 9, 2, 5]
     print(quick_sort(D, 5, 3))
     E = [9, 2, 55, 76, 24]
     print(quick_sort(E, 0, len(E)-1))
-
-

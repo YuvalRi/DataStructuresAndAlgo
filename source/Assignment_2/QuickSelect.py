@@ -1,5 +1,6 @@
 from Partition import partition
 
+
 def quick_select(A: list, p: int, r: int, d: int):
     if d > 0 and d <= r - p + 1:
         q = partition(A, p, r)
@@ -8,6 +9,7 @@ def quick_select(A: list, p: int, r: int, d: int):
         if q - p > d - 1:
             return quick_select(A, p, q - 1, d)
         return quick_select(A, q + 1, r, d - q + p - 1)
+
 
 if __name__ == "__main__":
     A = [5, 30, 1, 9, 15]
