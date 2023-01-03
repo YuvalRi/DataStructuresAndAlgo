@@ -27,7 +27,7 @@ class graph:
         visited = [False]*(max(self.graph) + 1)
         # create a queue for BFS
         queue = []
-        # mark the souce node as visited and enqueue it
+        # mark the source node as visited and enqueue it
         queue.append(s)
         visited[s] = True
         while queue:
