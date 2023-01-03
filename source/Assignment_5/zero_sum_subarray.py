@@ -1,14 +1,12 @@
-# The goal is to find a continuous subarray that its sum is exactly 0.
-# i.e, to find indices i < j so that the
-# summation over A[k] where k goes from i to j equal to 0.
 # The solution below based on Vikas Chitturi solution
 # in geeksforgeeks site.
 
 def zero_sum_subarray(A, n):
     '''
-    Input: A - an array of integers
-    Output: indices of the required subarray,
-    if such one exists
+    Input: A - an array of integers, n - length of A
+    Output: List of tuples, where each tuple represents
+    the start and end indices of a subarray 'A' that has
+    a sum of zero
     '''
     # creating an empty dictionary
     hash_table = {}
@@ -54,6 +52,7 @@ if __name__ == "__main__":
     arr_1 = [0, -2, 2, 5, 6, 3]
     n = len(arr_1)
     out = zero_sum_subarray(arr_1, n)
+    print(out)
     print_message(out)
     arr_2 = [3, -1, 1, -3, 6, 4]
     n = len(arr_2)
